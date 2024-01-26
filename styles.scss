@@ -30,7 +30,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    // outline: 1px solid black;
+    // outline: 1px solid crimson;
     // border: 1px solid crimson;
 }
 
@@ -38,7 +38,8 @@ body {
     height: 100vh;
     width: 100vw;
     background-color: var(--body-bg-clr);
-    font-family: Arial, sans-serif;
+    font-family: Rubik, Arial, sans-serif;
+    font-size: 1.7rem;
 }
 
 aside {
@@ -50,19 +51,21 @@ aside {
     padding-top: 50px;
 
     .brand{
-        height: 70px;
-        width: 100%;
-        @include flex-position();
+        height: 40px;
+        width: 86%;
+        @include flex-position($x:flex-start);
     }
 
     .logo {
-        height: 100%;
+        height: 80%;
         object-fit: contain;
+        margin-right: 5px;
     }
 
     .brand-name {
         color: var(--purple);
         font-weight: bold;
+        font-size: .9em;
     }
 }
 
