@@ -11,6 +11,54 @@
   --txt-clr: #58568f;
   --grey: #8993a4;
   --body-bg-clr: #eceff6;
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--body-bg-clr);
+  font-family: Arial, sans-serif;
+}
+
+aside {
+  width: 18%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: normal;
+  flex-direction: row;
+  gap: 0;
+  background-color: var(--white);
+  padding: 20px;
+  padding-top: 50px;
+}
+aside .brand {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+}
+aside .logo {
+  height: 100%;
+  object-fit: contain;
+}
+aside .brand-name {
+  color: var(--purple);
+  font-weight: bold;
+}
+
+main {
+  width: 82%;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,7 +1,7 @@
 :root {
     --purple: #5a45aa;
     --orange: #fb6d3a;
-    
+
     --blue: #5ba8ff;
     --blue2: #e6f2ff;
 
@@ -15,4 +15,57 @@
     --txt-clr: #58568f;
     --grey: #8993a4;
     --body-bg-clr: #eceff6;
+    --white: #fff;
+}
+
+@mixin flex-position($display: flex,$x: center,$y: center,$dir: row,$gap: 0) {
+    display: $display;
+    justify-content: $x;
+    align-items: $y;
+    flex-direction: $dir;
+    gap: $gap;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    // outline: 1px solid black;
+    // border: 1px solid crimson;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--body-bg-clr);
+    font-family: Arial, sans-serif;
+}
+
+aside {
+    width: 18%;
+    height: 100%;
+    @include flex-position($y:normal);
+    background-color: var(--white);
+    padding: 20px;
+    padding-top: 50px;
+
+    .brand{
+        height: 70px;
+        width: 100%;
+        @include flex-position();
+    }
+
+    .logo {
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .brand-name {
+        color: var(--purple);
+        font-weight: bold;
+    }
+}
+
+main {
+    width: 82%;
 }
