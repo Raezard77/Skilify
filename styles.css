@@ -29,39 +29,63 @@ body {
 }
 
 aside {
-  width: 18%;
+  width: 22%;
   height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: normal;
-  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
   gap: 0;
   background-color: var(--white);
-  padding: 20px;
+  padding: 7px;
   padding-top: 50px;
 }
-aside .brand {
+
+.brand {
   height: 40px;
-  width: 86%;
+  width: 65%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
   gap: 0;
 }
-aside .logo {
-  height: 80%;
+.brand .logo {
+  height: 70%;
   object-fit: contain;
-  margin-right: 5px;
+  margin-right: 7px;
 }
-aside .brand-name {
+.brand .brand-name {
   color: var(--purple);
   font-weight: bold;
   font-size: 0.9em;
 }
 
+nav {
+  width: 100%;
+  padding: 30px;
+}
+nav .nav-ele {
+  background-color: var(--purple);
+  color: var(--white);
+  height: 70px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+  padding: 0 20px;
+}
+nav .nav-ele svg {
+  height: 50%;
+}
+nav .nav-ele p {
+  font-size: 0.7em;
+}
+
 main {
-  width: 82%;
+  width: 78%;
 }
 
 /*# sourceMappingURL=styles.css.map */
